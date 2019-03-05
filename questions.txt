@@ -1,0 +1,21 @@
+q1,Which one of these coffee do you most want to drink?
+a1,1. ESPRESSO | 2. LATTE | 3. ICED COFFEE  | 4. REGULAR COFFEE | 5. I HATE COFFEE
+a_1,logic
+a_2,creative
+a_3,trendsetter
+a_4,minimalistic
+a_5,nil
+q2,Let's say you are now 5 km away from home: how would you prefer to travel?
+a2,1. LIMOUSINE | 2. UBER BLACK | 3. UBER OR TAXI | 4. BUS | 5. WALK
+b_1,very_rich
+b_2,rich
+b_3,doing_ok
+b_4,doing_soso
+b_5,no_money
+q3,If this person has fallen into the ocean and ask for help what would you do?
+a3,1. JUMP TO SAME HIM/HER | 2. FIND SOMEONE FOR HELP | 3. CALL 000 | 4. YELL 'HELP!' | 5. RUN
+c_1,lover
+c_2,half_lover
+c_3,close_friend
+c_4,soso_friend
+c_5,hater

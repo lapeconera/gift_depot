@@ -1,0 +1,5 @@
+g1,logic,rich,lover,lover,lover,lover,name,desc,url,0
+g2,logic,rich,lover,lover,lover,lover,name,desc,url,0
+g3,logic,rich,lover,lover,lover,lover,name,desc,url,0
+g4,logic,rich,lover,lover,lover,lover,name,desc,url,0
+g5,logic,rich,lover,lover,lover,lover,name,desc,url,0
