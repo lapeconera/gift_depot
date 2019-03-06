@@ -219,13 +219,12 @@ class Gift
                     puts "Gift name: #{@gifts[a][10]}"
                     puts "Gift Description: #{@gifts[a][11]}"
                     sleep(2)
-                    system("open #{@gifts[0][12]}")
+                    system("open #{@gifts[a][12]}")
                     
                     #another gift?
                     puts "\n"
                     puts "\n"
                     puts "Would you like to try again?"
-                    qna
                 end
                 a += 1
             end                
@@ -249,13 +248,12 @@ class Gift
                     puts "Gift name: #{@gifts[x][10]}"
                     puts "Gift Description: #{@gifts[x][11]}"
                     sleep(2)
-                    system("open #{@gifts[0][12]}")
+                    system("open #{@gifts[x][12]}")
                     
                     #another gift?
                     puts "\n"
                     puts "\n"
                     puts "Would you like to try again?"
-                    qna
                 end
                 x += 1
             end
