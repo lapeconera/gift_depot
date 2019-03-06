@@ -6,28 +6,7 @@ Purpose:
 Create the application that can help our clients achieve their goal for the holiday season.
 Our clients are online retailers who have a wide range of products and want to filter it to help customers find the best results according to their needs.
 Our users are the people who want to save time looking for the match of their gift but want to give a good impression to the recipient who will receive the gift
-
-Functionality:
-
 With only little information of USER and the relationship of the person who’d receive the gift, we will narrow down the options and try to provide the best choice of all.
-
-We selected the gift based on the value that we collected from 3 question:
-Question1 ( Buyer's personality )
-Through the coffee taste, we tried to track the personality of the user.
-This is referenced from the article that analize the connection between the mind and the type of coffee we drink.
-https://www.littlethings.com/coffee-order-reveals-personality/?vpage=1
-Question2 ( Buyer's budget )
-Asking where would the user take the person for the special occasion, we could understand how much of budget the user was willing to spend.
-Question3 ( Buyer and the receiver connection )
-Understanding how much the user could risk to save the life of the other person, we could track their relationship.
-
-Code structure uses a Class, Instants variable, Method, Hashs, blocks, arrays and loops
-
-Separate text files were used as a database to store information such as:
-* User information
-* Gift question information
-* Gift result information 
-
 
 Instruction for use:
 
@@ -36,10 +15,29 @@ gem install colorize
 
 IMPORTANT:
 
+Client: David Jones
+
+David Jones's User: Dodam
+
 (*username: 'dodam' password: 'unicorn' )
 (*security question 1 answer: 'bibimbap')
 (*security question 2 answer: 'red')
 (*security question robot test answer: 'unicorn')
+
+Functionality:
+
+We selected the gifts based on the values that we collected from 3 question:
+
+Question1 ( Buyer's personality )
+Through the coffee taste, we tried to track the personality of the user.
+This is referenced from the article that analize the connection between the mind and the type of coffee we drink.
+https://www.littlethings.com/coffee-order-reveals-personality/?vpage=1
+
+Question2 ( Buyer's budget )
+Asking where would the user take the person for the special occasion, we could understand how much of budget the user was willing to spend.
+
+Question3 ( Buyer and the receiver connection )
+Understanding how much the user could risk to save the life of the other person, we could track their relationship.
 
 Enter your user name and password.
 If you entered the user name and password correctly , you will able to start the survey.
@@ -65,6 +63,12 @@ If the character enter is a single character and is between 1 to 5 inclusive, th
 
 Program with exit.
 
+Code structure uses a Class, Instance variable, Method, Hashs, blocks, arrays and loops
+
+Separate text files were used as a database to store information such as:
+* User information
+* Gift question information
+* Gift result information 
 
 Brainstorming & Workstation:
 
