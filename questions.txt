@@ -4,16 +4,16 @@ a_1,logic
 a_2,creative
 a_3,trendsetter
 a_4,minimalistic
-a_5,nil
-q2,For the special occasion of this person where would you take them to eat?
+a_5,minimalistic
+q2,For a special occasion for this person where would you take them to eat?
 a2,1. Fine Dining | 2. Casual-Dining | 3. Pub | 4. Fast-food | 5. 7-eleven
 b_1,very_rich
 b_2,rich
 b_3,doing_ok
 b_4,doing_soso
-b_5,doing_not_good
+b_5,doing_soso
 q3,If this person has fallen into the ocean and ask for help what would you do?
-a3,1. JUMP TO SAME HIM/HER | 2. FIND SOMEONE FOR HELP | 3. CALL 000 | 4. YELL 'HELP!' | 5. RUN AWAY
+a3,1. JUMP TO SAVE HIM/HER | 2. FIND SOMEONE FOR HELP | 3. CALL 000 | 4. YELL 'HELP!' | 5. RUN AWAY
 c_1,lover
 c_2,half_lover
 c_3,close_friend

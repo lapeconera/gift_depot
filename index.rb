@@ -60,24 +60,24 @@ class Gift
                     if a2 == @security[5]
                         puts "\n"
                         puts "\n"
-                        puts "                /()()()\\\\\\\\*"
-                        puts "      =======()()()()()\\\\\\\\\*"
-                        puts "            ()           \\\\\\\\\\\*"
-                        puts "            ()(*)    _/      \\\\\\\\\\\*"
-                        puts "            \\    /  \\      \\\\\\\\\\__________________"
-                        puts "                |  |   |       </                ()\\\\\\\\\\\\\\\\\\\*"
-                        puts "                o_|   /        /                    \\\\\\\ \\\\\\\\\\    \\\\\\\\\\\\\\\*"
-                        puts "                    |  ._    (                      \\\\\\\ \\\\\\\\\\\\\\\\\\\\\\\\\\\\*"
-                        puts "                    | /                       /       /    \\\\\\\\\\\\\\\    \\\\\\\\\*"
-                        puts "            .______/\/     /                 /       /         \\\\\\\\\\\\*"
-                        puts "            / __.____/    _/     __________()       /\\\*"
-                        puts "           / / / ________/`---------`         \\     /  \\\_*"
-                        puts "          / /  \\\ \\\                            \\   \\ \\_  \\\*"
-                        puts "         ( <    \\\ \\\                             >  /    \\\ \\\*"
-                        puts "          \\/      \\\\\_                          / /       > )*"
-                        puts "                  \\\_|                        / /       / /*"
-                        puts "                                             / /       / /*"
-                        puts "                                             /_|       /_|*"
+                        puts "                /()()()\\\\\\\\*".colorize(:color => :magenta)
+                        puts "      =======()()()()()\\\\\\\\\*".colorize(:color => :cyan)
+                        puts "            ()           \\\\\\\\\\\*".colorize(:color => :magenta)
+                        puts "            ()(*)    _/      \\\\\\\\\\\*".colorize(:color => :cyan)
+                        puts "            \\    /  \\      \\\\\\\\\\__________________".colorize(:color => :magenta)
+                        puts "                |  |   |       </                ()\\\\\\\\\\\\\\\\\\\*".colorize(:color => :cyan)
+                        puts "                o_|   /        /                    \\\\\\\ \\\\\\\\\\    \\\\\\\\\\\\\\\*".colorize(:color => :magenta)
+                        puts "                    |  ._    (                      \\\\\\\ \\\\\\\\\\\\\\\\\\\\\\\\\\\\*".colorize(:color => :cyan)
+                        puts "                    | /                       /       /    \\\\\\\\\\\\\\\    \\\\\\\\\*".colorize(:color => :magenta)
+                        puts "            .______/\/     /                 /       /         \\\\\\\\\\\\*".colorize(:color => :cyan)
+                        puts "            / __.____/    _/     __________()       /\\\*".colorize(:color => :magenta)
+                        puts "           / / / ________/`---------`         \\     /  \\\_*".colorize(:color => :cyan)
+                        puts "          / /  \\\ \\\                            \\   \\ \\_  \\\*".colorize(:color => :magenta)
+                        puts "         ( <    \\\ \\\                             >  /    \\\ \\\*".colorize(:color => :cyan)
+                        puts "          \\/      \\\\\_                          / /       > )*".colorize(:color => :magenta)
+                        puts "                  \\\_|                        / /       / /*".colorize(:color => :cyan)
+                        puts "                                             / /       / /*".colorize(:color => :magenta)
+                        puts "                                             /_|       /_|*".colorize(:color => :cyan)
                         puts "\n"
                         print "reCAPTCHA Human/Robot test: #{@security[6]}"
                         puts "\n"
