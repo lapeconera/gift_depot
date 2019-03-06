@@ -191,7 +191,7 @@ class Gift
         end
         ad3= "c_#{answer3}"
         a3 = @questions[ad3]
-        p answers = [a1,a2,a3]
+        answers = [a1,a2,a3]
         the_gift(answers)
     end
 
