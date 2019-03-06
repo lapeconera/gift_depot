@@ -54,6 +54,9 @@ If the character enter is a single character and is between 1 to 5 inclusive, th
 
 Program with exit.
 
+
+Brainstorming & Workstation:
+
 ![alt text](https://github.com/lapeconera/gift_depot/blob/master/20190306_164816.jpg "Logo Title Text 1")
 
 ![alt text](https://github.com/lapeconera/gift_depot/blob/master/20190306_164816.jpg "Logo Title Text 1")
