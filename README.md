@@ -21,10 +21,21 @@ Asking where would the user take the person for the special occasion, we could u
 Question3 ( Buyer and the receiver connection )
 Understanding how much the user could risk to save the life of the other person, we could track their relationship.
 
+Code structure uses a Class, Instants variable, Method, Hashs, blocks, arrays and loops
+
+Separate text files were used as a database to store information such as:
+* User information
+* Gift question information
+* Gift result information 
+
 
 Instruction for use:
 
+Installations needed:
+gem install colorize
+
 IMPORTANT:
+
 (*username: 'dodam' password: 'unicorn' )
 (*security question 1 answer: 'bibimbap')
 (*security question 2 answer: 'red')
