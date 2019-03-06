@@ -27,6 +27,8 @@ Instruction for use:
 Enter your user name and password.
 If you entered the user name and password correctly , you will able to start the game.
 If you entered wrong 3 times, you will have to answer security questions.
+(*username: dodam password: unicorn )
+(*security question answer: unicorn)
 
 Therefore, you will have to answer 3 questions.
 What informations we are collecting from those questions.
