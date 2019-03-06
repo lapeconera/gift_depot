@@ -1,5 +1,4 @@
 require "colorize"
-require "launchy"
 class Gift
 
     attr_accessor :login,:qna,:the_gift
@@ -18,10 +17,10 @@ class Gift
         s_file.close
         i = 1
         while i <= 4
-            puts "                                                                   ".colorize(:color => :white, :background => :light_blue)
-            puts "             Please enter your username and password               ".colorize(:color => :white, :background => :light_blue)
-            puts "                                                                   ".colorize(:color => :white, :background => :light_blue)
-            puts "                                                                   ".colorize(:color => :white, :background => :light_blue)
+            puts "                                                                   ".colorize(:color => :white, :background => :blue)
+            puts "             Please enter your username and password               ".colorize(:color => :white, :background => :blue)
+            puts "                                                                   ".colorize(:color => :white, :background => :blue)
+            puts "                                                                   ".colorize(:color => :white, :background => :blue)
             if i > 1
                 puts "                                                                   ".colorize(:color => :white, :background => :red)
                 puts "                                                      Attempt #{i}/3  ".colorize(:color => :white, :background => :red)
@@ -122,6 +121,22 @@ class Gift
         puts "\n"
         puts @questions['a1']
         answer1 = gets.chomp
+        #if wrong char
+        until answer1.match?(/[1-5]/) && answer1.length == 1
+            puts "\n"
+            puts "\n"
+            print "Input error! Please enter a number from 1 to 5".colorize(:color => :white, :background => :red)
+            puts "\n"
+            puts "\n"
+            puts @questions['q1']
+            puts "\n"
+            print "Please enter the number of your answer"
+            puts "\n"
+            puts "\n"
+            puts @questions['a1']
+            answer1 = gets.chomp
+        end
+
         ad1 = "a_#{answer1}"
         a1 = @questions[ad1]
         #question2
@@ -133,6 +148,21 @@ class Gift
         puts "\n"
         puts @questions['a2']
         answer2 = gets.chomp
+        #if wrong char
+        until answer2.match?(/[1-5]/) && answer2.length == 1
+            puts "\n"
+            puts "\n"
+            print "Input error! Please enter a number from 1 to 5".colorize(:color => :white, :background => :red)
+            puts "\n"
+            puts "\n"
+            puts @questions['q2']
+            puts "\n"
+            print "Please enter the number of your answer"
+            puts "\n"
+            puts "\n"
+            puts @questions['a2']
+            answer2 = gets.chomp
+        end
         ad2 = "b_#{answer2}"
         a2 = @questions[ad2]
         #question3
@@ -144,9 +174,24 @@ class Gift
         puts "\n"
         puts @questions['a3']
         answer3 = gets.chomp
+        #if wrong char
+        until answer3.match?(/[1-5]/) && answer3.length == 1
+            puts "\n"
+            puts "\n"
+            print "Input error! Please enter a number from 1 to 5".colorize(:color => :white, :background => :red)
+            puts "\n"
+            puts "\n"
+            puts @questions['q3']
+            puts "\n"
+            print "Please enter the number of your answer"
+            puts "\n"
+            puts "\n"
+            puts @questions['a3']
+            answer3 = gets.chomp
+        end
         ad3= "c_#{answer3}"
         a3 = @questions[ad3]
-        answers = [a1,a2,a3]
+        p answers = [a1,a2,a3]
         the_gift(answers)
     end
 
@@ -159,35 +204,60 @@ class Gift
         g_file.close
         #break gifts array into individual arrays
         gifts_length = @gifts.length
+        #map
         @gifts.map! do |v|
             v.split(',')
         end
-        a = 0
-        while a < gifts_length
-            arr_answers.each do |a_val|
-                if @gifts[a][1..7].include? a_val
-                    @gifts[a][12] = @gifts[a][12].to_i + 1
+        if arr_answers.include? "hater"
+            a = 0
+            while a < gifts_length
+                if @gifts[a][1..8].include? "hater"
+                    puts "\n"
+                    puts "\n"
+                    puts "Gift Suggestion Depot's gift reccomendation:"
+                    puts "\n"
+                    puts "Gift name: #{@gifts[a][10]}"
+                    puts "Gift Description: #{@gifts[a][11]}"
+                    sleep(2)
+                    system("open #{@gifts[0][12]}")
+                    
+                    #another gift?
+                    puts "\n"
+                    puts "\n"
+                    puts "Would you like to try again?"
+                    qna
                 end
+                a += 1
+            end                
+        else
+            a = 0
+            while a < gifts_length
+                arr_answers.each do |a_val|
+                    if @gifts[a][1..8].include? a_val
+                        @gifts[a][13] = @gifts[a][13].to_i + 1
+                    end
+                end
+                a += 1
             end
-            a += 1
-        end
-        x = 0
-        while x < gifts_length
-            if @gifts[x][12].to_i >= 3
-                puts "\n"
-                puts "\n"
-                puts "Gift Depot's gift reccomendation:"
-                puts "\n"
-                puts "Gift name: #{@gifts[x][9]}"
-                puts "Gift Description: #{@gifts[x][10]}"
-                sleep(2)
-                system("open #{@gifts[0][11]}")
-                
-                #another gift?
-                puts "\n"
-                puts "\n"
-                puts "Would you like to try again?"
-                qna
+            x = 0
+            while x < gifts_length
+                if @gifts[x][13].to_i >= 3
+                    puts "\n"
+                    puts "\n"
+                    puts "Gift Suggestion Depot's gift reccomendation:"
+                    puts "\n"
+                    puts "Gift name: #{@gifts[x][10]}"
+                    puts "Gift Description: #{@gifts[x][11]}"
+                    sleep(2)
+                    system("open #{@gifts[0][12]}")
+                    
+                    #another gift?
+                    puts "\n"
+                    puts "\n"
+                    puts "Would you like to try again?"
+                    qna
+                end
+                x += 1
             end
         end
     end
@@ -196,9 +266,8 @@ prompt = Gift.new
 #welcome massage
 puts "                                                                   ".colorize(:color => :white, :background => :blue)
 puts "                                                                   ".colorize(:color => :white, :background => :blue)
-puts "                    Welcome to the GIFT DEPOT                      ".colorize(:color => :white, :background => :blue)
+puts "              Welcome to the GIFT SUGGESTION DEPOT                 ".colorize(:color => :white, :background => :blue)
 prompt.login
-
 
 # ########################end#############################
 # #r.sickle@protonmail.com

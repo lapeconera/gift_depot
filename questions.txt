@@ -5,8 +5,8 @@ a_2,creative
 a_3,trendsetter
 a_4,minimalistic
 a_5,nil
-q2,For the special occasion of this person, where would you take them to eat?
-a2,1. Fine Dining | 2. Casual Dining | 3. Pub | 4. Fast-food | 5. 7-eleven
+q2,For the special occasion of this person where would you take them to eat?
+a2,1. Fine Dining | 2. Casual-Dining | 3. Pub | 4. Fast-food | 5. 7-eleven
 b_1,very_rich
 b_2,rich
 b_3,doing_ok
