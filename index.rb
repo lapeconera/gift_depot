@@ -1,3 +1,5 @@
+require "colorize"
+require "launchy"
 class Gift
 
     attr_accessor :login,:qna,:the_gift
@@ -16,13 +18,14 @@ class Gift
         s_file.close
         i = 1
         while i <= 4
-            print "** Please enter your username and password"
-            puts "\n"
-            puts "\n"
+            puts "                                                                   ".colorize(:color => :white, :background => :light_blue)
+            puts "             Please enter your username and password               ".colorize(:color => :white, :background => :light_blue)
+            puts "                                                                   ".colorize(:color => :white, :background => :light_blue)
+            puts "                                                                   ".colorize(:color => :white, :background => :light_blue)
             if i > 1
-                print "Attempt #{i}/3"
-                puts "\n"
-                puts "\n"
+                puts "                                                                   ".colorize(:color => :white, :background => :red)
+                puts "                                                      Attempt #{i}/3  ".colorize(:color => :white, :background => :red)
+                puts "                                                                   ".colorize(:color => :white, :background => :red)
             end
             puts "Username required"
             u_name = gets.chomp
@@ -58,26 +61,26 @@ class Gift
                     if a2 == @security[5]
                         puts "\n"
                         puts "\n"
-                        puts "
-                                /()()()\\\\
-                        =======()()()()()\\\\\
-                            ()           \\\\\\\
-                            ()(*)    _/      \\\\\\\
-                            \    /  \      \\\\\\________________
-                                |  |   |       </                  ()\\\\
-                                o_|   /        /                      \ \\\\    \\\\\\\
-                                    |  ._    (                        \ \\\\\\\\\\\\\\\\
-                                    | /                       /       /    \\\\\\\     \\
-                            .______/\/     /                 /       /         \\\
-                            / __.____/    _/         ________()       /\
-                        / / / ________/`---------`         \     /  \_
-                        / /  \ \                             \   \ \_  \
-                        ( <    \ \                             >  /    \ \
-                        \/      \\_                          / /       > )
-                                \_|                        / /       / /
-                                                            _//       _//
-                                                        /_|       /_|"
-                        print "reCAPTCHA Robot? #{@security[6]}"
+                        puts "                /()()()\\\\\\\\*"
+                        puts "      =======()()()()()\\\\\\\\\*"
+                        puts "            ()           \\\\\\\\\\\*"
+                        puts "            ()(*)    _/      \\\\\\\\\\\*"
+                        puts "            \\    /  \\      \\\\\\\\\\__________________"
+                        puts "                |  |   |       </                ()\\\\\\\\\\\\\\\\\\\*"
+                        puts "                o_|   /        /                    \\\\\\\ \\\\\\\\\\    \\\\\\\\\\\\\\\*"
+                        puts "                    |  ._    (                      \\\\\\\ \\\\\\\\\\\\\\\\\\\\\\\\\\\\*"
+                        puts "                    | /                       /       /    \\\\\\\\\\\\\\\    \\\\\\\\\*"
+                        puts "            .______/\/     /                 /       /         \\\\\\\\\\\\*"
+                        puts "            / __.____/    _/     __________()       /\\\*"
+                        puts "           / / / ________/`---------`         \\     /  \\\_*"
+                        puts "          / /  \\\ \\\                            \\   \\ \\_  \\\*"
+                        puts "         ( <    \\\ \\\                             >  /    \\\ \\\*"
+                        puts "          \\/      \\\\\_                          / /       > )*"
+                        puts "                  \\\_|                        / /       / /*"
+                        puts "                                             / /       / /*"
+                        puts "                                             /_|       /_|*"
+                        puts "\n"
+                        print "reCAPTCHA Human/Robot test: #{@security[6]}"
                         puts "\n"
                         puts "\n"
                         puts "Enter your answer"
@@ -112,9 +115,7 @@ class Gift
         q_file.close
         #question 1
         puts "\n"
-        puts "\n"
         puts @questions['q1']
-        puts "\n"
         puts "\n"
         print "Please enter the number of your answer"
         puts "\n"
@@ -124,8 +125,8 @@ class Gift
         ad1 = "a_#{answer1}"
         a1 = @questions[ad1]
         #question2
-        puts @questions['q2']
         puts "\n"
+        puts @questions['q2']
         puts "\n"
         print "Please enter the number of your answer"
         puts "\n"
@@ -135,8 +136,8 @@ class Gift
         ad2 = "b_#{answer2}"
         a2 = @questions[ad2]
         #question3
-        puts @questions['q3']
         puts "\n"
+        puts @questions['q3']
         puts "\n"
         print "Please enter the number of your answer"
         puts "\n"
@@ -162,40 +163,42 @@ class Gift
             v.split(',')
         end
         a = 0
-        x = 0
         while a < gifts_length
             arr_answers.each do |a_val|
-                if @gifts[a][1..5].include? a_val
-                    @gifts[a][10] = @gifts[a][10].to_i + 1
+                if @gifts[a][1..7].include? a_val
+                    @gifts[a][12] = @gifts[a][12].to_i + 1
                 end
             end
             a += 1
         end
-       p @gifts[0][10]
-        
-
-
-
+        x = 0
+        while x < gifts_length
+            if @gifts[x][12].to_i >= 3
+                puts "\n"
+                puts "\n"
+                puts "Gift Depot's gift reccomendation:"
+                puts "\n"
+                puts "Gift name: #{@gifts[x][9]}"
+                puts "Gift Description: #{@gifts[x][10]}"
+                sleep(2)
+                system("open #{@gifts[0][11]}")
+                
+                #another gift?
+                puts "\n"
+                puts "\n"
+                puts "Would you like to try again?"
+                qna
+            end
+        end
     end
-
 end
 prompt = Gift.new
-# prompt.login
-an_test = ["logic","rich","lover","lover","lover","lover"]
-prompt.the_gift(an_test)
-# this will never end else control c
-# puts "\n"
-# puts "\n"
-# print "Welcome to the GIFT DEPOT"
-# puts "\n"
-# puts "\n"
+#welcome massage
+puts "                                                                   ".colorize(:color => :white, :background => :blue)
+puts "                                                                   ".colorize(:color => :white, :background => :blue)
+puts "                    Welcome to the GIFT DEPOT                      ".colorize(:color => :white, :background => :blue)
+prompt.login
 
-# a1 b1 c1
-# a2 b1 c1
-# a3 b1 c1
-# a1 b2 c1
-# a1 b2 c2
-# a1 b2 c3
 
 # ########################end#############################
 # #r.sickle@protonmail.com

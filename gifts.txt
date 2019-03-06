@@ -1,5 +1,5 @@
-g1,logic,rich,lover,lover,lover,lover,name,desc,url,0
-g2,logic,rich,lover,lover,lover,lover,name,desc,url,0
-g3,logic,rich,lover,lover,lover,lover,name,desc,url,0
-g4,logic,rich,lover,lover,lover,lover,name,desc,url,0
-g5,logic,rich,lover,lover,lover,lover,name,desc,url,0
+g1,logic,doing_ok,very_rich,rich,lover,half_lover,close_friend,soso_friend,minimalistic,APPLE COMPUTER,The 21.5-inch iMac features a brilliant widescreen display / powerful new seventh-generation Intel Core processor superfast graphics and more. All in a stunningly thin enclosure that's only 5 millimetres at the edge.,https://www.davidjones.com/electrical/computers-and-tablets/imacs/21429486/IMAC-21.5IN-2.3GHZ-DC%7C8GB%7C1TB-MMQA2X%7CA.html,0
+g2,logic,rich,lover,lover,lover,lover,lover,lover,name,desc,url,6
+g3,logic,rich,lover,lover,lover,lover,lover,lover,desc,url,6
+g4,logic,rich,lover,lover,lover,lover,lover,lover,desc,url,6
+g5,logic,rich,lover,lover,lover,lover,lover,lover,name,desc,url,6
