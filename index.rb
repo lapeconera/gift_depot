@@ -220,19 +220,19 @@ class Gift
                     puts "Gift Description: #{@gifts[a][11]}"
                     sleep(2)
                     system("open #{@gifts[a][12]}")
-                    
+
                     puts "\n"
                     puts "\n"
                     puts "Goodbye"
-                    exit
+                    exit 
                 end
                 a += 1
-            end                
+            end               
         else
             a = 0
             while a < gifts_length
                 arr_answers.each do |a_val|
-                    if @gifts[a][1..8].include? a_val
+                    if @gifts[a][1..9].include? a_val
                         @gifts[a][13] = @gifts[a][13].to_i + 1
                     end
                 end
@@ -240,6 +240,7 @@ class Gift
             end
             x = 0
             while x < gifts_length
+                p @gifts[x][13]
                 if @gifts[x][13].to_i >= 3
                     puts "\n"
                     puts "\n"
