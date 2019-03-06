@@ -1,6 +1,8 @@
 # gift_depot
 app challenge
+
 Purpose: 
+
 Create the application that can help our clients achieve their goal for the holiday season.
 Our clients are online retailers who have a wide range of products and want to filter it to help customers find the best results according to their needs.
 Our users are the people who want to save time looking for the match of their gift but want to give a good impression to the recipient who will receive the gift
