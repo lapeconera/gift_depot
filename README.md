@@ -19,6 +19,16 @@ The first question is about the buyer's personality
 The second question is about the buyer's budget
 The third question is about the relationship between the buyer and the receiver.
 
-The gift suggestions is then narroed based on the value that we collectied from 3 questions.
+The gift suggestions is then narrowed based on the value that we collected from 3 question:
+Question1 ( Buyer's personality )
+Through the coffee taste, we tried to track the personality of the user.
+This is referenced from the article that analize the connection between the mind and the type of coffee we drink.
+Question2 ( Buyer's budget )
+Asking where would the user take the person for the special occasion, we could understand how much of budget the user was willing to spend.
+Question3 ( Buyer and the receiver connection )
+Understanding how much the user could risk to save the life of the other person, we could track their relationship.
+
+
+
 
 
