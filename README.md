@@ -72,12 +72,12 @@ Separate text files were used as a database to store information such as:
 
 Brainstorming & Workstation:
 
-![alt text](https://github.com/lapeconera/gift_depot/blob/master/20190306_164816.jpg "brainstorming1")
-![alt text](https://github.com/lapeconera/gift_depot/blob/master/20190306_164823.jpg "brainstorming2")
-![alt text](https://github.com/lapeconera/gift_depot/blob/master/20190306_164831.jpg "brainstorming3")
-![alt text](https://github.com/lapeconera/gift_depot/blob/master/20190306_164842.jpg "brainstorming4")
-![alt text](https://github.com/lapeconera/gift_depot/blob/master/20190306_164913.jpg "brainstorming5")
-![alt text](https://github.com/lapeconera/gift_depot/blob/master/20190306_165000.jpg "brainstorming6")
+![alt text](https://github.com/lapeconera/gift_depot/blob/master/documentation/20190306_164816.jpg "brainstorming1")
+![alt text](https://github.com/lapeconera/gift_depot/blob/master/documentation/20190306_164823.jpg "brainstorming2")
+![alt text](https://github.com/lapeconera/gift_depot/blob/master/documentation/20190306_164831.jpg "brainstorming3")
+![alt text](https://github.com/lapeconera/gift_depot/blob/master/documentation/20190306_164842.jpg "brainstorming4")
+![alt text](https://github.com/lapeconera/gift_depot/blob/master/documentation/20190306_164913.jpg "brainstorming5")
+![alt text](https://github.com/lapeconera/gift_depot/blob/master/documentation/20190306_165000.jpg "brainstorming6")
 
 
 
